@@ -1,0 +1,21 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  name: String!
+  age: Float!
+}
+
+type Query {
+  users: [User!]!
+}
+
+type Mutation {
+  createUser(createUserInput: CreateUserInput!): User!
+}
+
+input CreateUserInput {
+  name: String!
+  age: Float!
+}

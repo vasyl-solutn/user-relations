@@ -34,4 +34,24 @@ $ npm run test:cov
 
 docker-compose up -d
 
+npm run start:dev
 
+`
+
+```
+mutation {
+  createUser(name: "John Doe", age: 30) {
+    id
+    name
+    age
+  }
+}
+
+query {
+  users {
+    id
+    name
+    age
+  }
+}
+```
